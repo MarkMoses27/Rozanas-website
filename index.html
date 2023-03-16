@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rozanas Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <section class="first">
+      <header>
+        <a href="logo">Rozanas</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+              <a href="#">Appetizers</a>
+              <a href="#">Entrees</a>
+              <a href="#">Desserts</a>
+            </div>
+          </li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+      <section class="welcome">
+        <div class="content">
+          <h1>Welcome to Rozanas</h1>
+          <p>We serve all kinds of food</p>
+        </div>
+        <a class="button" href="#">Order Your Table</a>
+      </section>
+    </section>
+    <section class="latest-news">
+      <div class="content">
+        <h2>Latest Food News</h2>
+        <h1>Discover Our Delicious Burgers</h1>
+        <p>
+          Find out what's new and exciting at Burger Kings. From our
+          mouth-watering burgers to our signature fries, we've got something for
+          everyone.
+        </p>
+      </div>
+      <div class="image-container">
+        <div class="image-text">
+          <img src="images/chef1.png" alt="Chef's Special Burger" />
+          <h3>Chef's Special Burger</h3>
+          <p>Indulge in our mouth-watering Chef's Special Burger today!</p>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <img src="images/food1.jpg" alt="Burgers" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Rozanas Restaurant. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

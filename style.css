@@ -1,0 +1,414 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #2d2d2d;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+header li:first-child {
+  margin-left: 0;
+}
+
+header .active {
+  color: #f44336;
+  border-bottom: 2px solid #f44336;
+}
+
+header a:hover {
+  background: #f44336;
+  padding: 10px;
+  transition: 0.6s;
+}
+
+/* Style the first section */
+.first {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(Images/r.bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #2d2d2d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #f44336;
+}
+
+.dropdown-content a:hover {
+  background-color: #2d2d2d;
+  color: #f44336;
+}
+
+/* Welcome section */
+.welcome {
+  padding: 100px 0;
+  text-align: center;
+  justify-content: center;
+  top: 50%;
+  position: absolute;
+  left: 30%;
+}
+
+.welcome h1 {
+  font-size: 48px;
+  color: #ff5e00;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.welcome p {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff5e00;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e64c00;
+  border-radius: 0;
+  border: none;
+}
+
+/* Latest News section */
+.latest-news {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.latest-news h2 {
+  font-size: 36px;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.latest-news h1 {
+  font-size: 48px;
+  color: #ff5e00;
+  margin-bottom: 30px;
+}
+
+.latest-news p {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-text {
+  width: 40%;
+  text-align: left;
+}
+
+.image-text img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.image-text h3 {
+  font-size: 30px;
+  color: #ff5e00;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.image-text p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff5e00;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64c00;
+}
+
+.button {
+  text-decoration: none;
+  border: 2px solid #f44336;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  align-content: center;
+  top: 75%;
+  left: 50%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: #f44336;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background: #2d2d2d;
+  border: 2px solid #f44336;
+}
+
+.content1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content1 h2 {
+  color: #f44336;
+  font-style: italic;
+  text-shadow: 2px 2px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  background-size: contain;
+}
+.image-container img:first-child {
+  border: 2px solid gold;
+  border-radius: 100%;
+  padding: 30px;
+  margin-right: 60px;
+}
+.image-container h1 {
+  color: #f44336;
+  font-weight: 600;
+}
+.image-container p {
+  color: #000;
+}
+#contact {
+  padding: 50px 0;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3636e6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3636e6;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #000d8066;
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+/* Center the footer and increase padding */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Add some background color and increase font size */
+.footer h4 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Add some padding and border to the footer columns */
+.footer .col-md-4 {
+  padding: 0 15px;
+  border-right: 1px solid #fff;
+}
+
+/* Remove the right border from the last column */
+.footer .col-md-4:last-child {
+  border-right: none;
+}
+
+/* Style the contact information */
+.footer p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the social media icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #000;
+  color: #fff;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+  }
+
+  header ul {
+    margin-top: 20px;
+  }
+
+  header li {
+    margin: 10;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px go here */
+}
